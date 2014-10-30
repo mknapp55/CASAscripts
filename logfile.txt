@@ -1,0 +1,84 @@
+Time: 2014-10-08T00:10:13.810299
+Clean finished for SB 0~0, RMS = 0.070795, pixel size = 12, image width = 6 degrees.
+Run time: 1261.895643
+Time: 2014-10-08T00:34:19.892943
+Clean finished for SB 0~1, RMS = 0.056000, pixel size = 12, image width = 6 degrees.
+Run time: 1446.08249116
+Time: 2014-10-08T00:43:28.175057
+Clean finished for SB 0~3, RMS = 0.070795, pixel size = 12, image width = 6 degrees.
+Run time: 548.281913996
+Time: 2014-10-08T00:55:39.238772
+Clean finished for SB 0~7, RMS = 0.052124, pixel size = 12, image width = 6 degrees.
+Run time: 731.063570976
+Time: 2014-10-08T01:12:21.577162
+Clean finished for SB 0~15, RMS = 0.048752, pixel size = 12, image width = 6 degrees.
+Run time: 1002.33822107
+Time: 2014-10-08T01:42:03.396441
+Clean finished for SB 0~0, RMS = 0.070795, pixel size = 12, image width = 6 degrees.
+Run time: 1600.937325
+Time: 2014-10-08T02:11:53.149774
+Clean finished for SB 0~1, RMS = 0.055921, pixel size = 12, image width = 6 degrees.
+Run time: 1789.75317478
+Time: 2014-10-08T02:47:26.029916
+Clean finished for SB 0~3, RMS = 0.053020, pixel size = 12, image width = 6 degrees.
+Run time: 2132.87998796
+Time: 2014-10-08T03:02:10.875397
+Clean finished for SB 0~7, RMS = 0.052124, pixel size = 12, image width = 6 degrees.
+Run time: 884.845336199
+Time: 2014-10-08T03:19:05.244505
+Clean finished for SB 0~15, RMS = 0.048752, pixel size = 12, image width = 6 degrees.
+Run time: 1014.36893201
+Time: 2014-10-08T05:54:04.553083
+Clean finished for SB 0~0, RMS = 0.070795, pixel size = 12, image width = 6 degrees.
+Run time: 1624.94308186
+Time: 2014-10-08T06:24:11.028343
+Clean finished for SB 0~1, RMS = 0.055921, pixel size = 12, image width = 6 degrees.
+Run time: 1806.47509193
+Time: 2014-10-08T06:58:34.270587
+Clean finished for SB 0~3, RMS = 0.053020, pixel size = 12, image width = 6 degrees.
+Run time: 2063.24205089
+Time: 2014-10-08T07:13:21.053433
+Clean finished for SB 0~7, RMS = 0.052124, pixel size = 12, image width = 6 degrees.
+Run time: 886.782688856
+Time: 2014-10-08T07:30:13.267341
+Clean finished for SB 0~15, RMS = 0.048752, pixel size = 12, image width = 6 degrees.
+Run time: 1012.21374106
+Time: 2014-10-08T12:44:34.831835
+Clean finished for SB 0~0, RMS = 0.070795, pixel size = 12, image width = 6 degrees.
+Run time: 1612.06794596
+Time: 2014-10-08T13:14:33.490612
+Clean finished for SB 0~1, RMS = 0.055921, pixel size = 12, image width = 6 degrees.
+Run time: 1798.65861106
+Time: 2014-10-08T13:49:42.649449
+Clean finished for SB 0~3, RMS = 0.053020, pixel size = 12, image width = 6 degrees.
+Run time: 2109.15867496
+Time: 2014-10-08T18:14:16.161291
+Clean finished for SB 0~0, RMS = 0.070795, pixel size = 12, image width = 6 degrees.
+Run time: 1180.34088016
+Time: 2014-10-08T18:22:34.655377
+Clean finished for SB 0~1, RMS = 0.070795, pixel size = 12, image width = 6 degrees.
+Run time: 498.493304968
+Time: 2014-10-08T18:32:49.307212
+Clean finished for SB 0~3, RMS = 0.057147, pixel size = 12, image width = 6 degrees.
+Run time: 614.651653051
+Time: 2014-10-08T18:48:11.620235
+Clean finished for SB 0~7, RMS = 0.052124, pixel size = 12, image width = 6 degrees.
+Run time: 922.312849998
+Time: 2014-10-08T19:10:53.858665
+Clean finished for SB 0~15, RMS = 0.048752, pixel size = 12, image width = 6 degrees.
+Run time: 1362.23822808
+Time: 2014-10-08T19:54:26.372843
+Clean finished for SB 0~0, RMS = 0.070795, pixel size = 12, image width = 6 degrees.
+Run time: 1164.07036591
+Time: 2014-10-08T20:01:51.915580
+Clean finished for SB 0~1, RMS = 0.070795, pixel size = 12, image width = 6 degrees.
+Run time: 445.542543173
+Time: 2014-10-08T20:12:11.109240
+Clean finished for SB 0~3, RMS = 0.057147, pixel size = 12, image width = 6 degrees.
+Run time: 619.193485022
+Time: 2014-10-08T20:26:14.038702
+Clean finished for SB 0~7, RMS = 0.052124, pixel size = 12, image width = 6 degrees.
+Run time: 842.929303885
+Time: 2014-10-08T20:48:33.573384
+Clean finished for SB 0~15, RMS = 0.048752, pixel size = 12, image width = 6 degrees.
+Run time: 1339.53450513

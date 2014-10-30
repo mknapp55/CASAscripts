@@ -1,0 +1,2 @@
+# CASA cluster definition configuration file
+govcloud-128-149-57-249, 30, /home/mknapp, 0, 4096

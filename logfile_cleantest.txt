@@ -1,0 +1,6 @@
+# Log for timesteps processing (param testing) of HD80606b LOFAR data
+Run started at 10/30/2014 17:13:59
+# Timestamp, # Timerange, # Runtime, # RMS
+# Log for timesteps processing (param testing) of HD80606b LOFAR data
+Run started at 10/30/2014 17:14:59
+# Timestamp, # Timerange, # Runtime, # RMS
