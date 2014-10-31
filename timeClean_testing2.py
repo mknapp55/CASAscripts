@@ -36,7 +36,7 @@ test6b = {'npix': 1024, 'its': 5000, 'wp': 2048, 'fac': 1, 'spw': '15~105', 'wt'
 
 # Facets:
 test7 = {'npix': 1024, 'its': 5000, 'wp': 512, 'fac': 1, 'spw': '15~105', 'wt': 'natural', 'robust': 0.0, 'majcyc': 5, 'pixsize': str(synthbeamasec[15]*2)+'arcsec', 'th': '0.0mJy', 'nterms': 1, 'stokes': 'I', 'gain': 0.1}
-test7b = {'npix': 1024, 'its': 5000, 'wp': 512, 'fac': 1, 'spw': '15~105', 'wt': 'brigs', 'robust': 0.5, 'majcyc': 5, 'pixsize': str(synthbeamasec[15]*2)+'arcsec', 'th': '0.0mJy', 'nterms': 1, 'stokes': 'I', 'gain': 0.1}
+test7b = {'npix': 1024, 'its': 5000, 'wp': 512, 'fac': 1, 'spw': '15~105', 'wt': 'briggs', 'robust': 0.5, 'majcyc': 5, 'pixsize': str(synthbeamasec[15]*2)+'arcsec', 'th': '0.0mJy', 'nterms': 1, 'stokes': 'I', 'gain': 0.1}
 test8 = {'npix': 1024, 'its': 5000, 'wp': 512, 'fac': 3, 'spw': '15~105', 'wt': 'natural', 'robust': 0.0, 'majcyc': 5, 'pixsize': str(synthbeamasec[15]*2)+'arcsec', 'th': '0.0mJy', 'nterms': 1, 'stokes': 'I', 'gain': 0.1}
 test8b = {'npix': 1024, 'its': 5000, 'wp': 512, 'fac': 3, 'spw': '15~105', 'wt': 'briggs', 'robust': 0.5, 'majcyc': 5, 'pixsize': str(synthbeamasec[15]*2)+'arcsec', 'th': '0.0mJy', 'nterms': 1, 'stokes': 'I', 'gain': 0.1}
 test9 = {'npix': 1024, 'its': 5000, 'wp': 512, 'fac': 5, 'spw': '15~105', 'wt': 'natural', 'robust': 0.0, 'majcyc': 5, 'pixsize': str(synthbeamasec[15]*2)+'arcsec', 'th': '0.0mJy', 'nterms': 1, 'stokes': 'I', 'gain': 0.1}
@@ -79,7 +79,7 @@ tbegin = time.time()
 for idx, t in enumerate(dt):
     ts_outer = time.time()
     print 'Starting clean for set with dt = '+t+'...'
-    for n in range(0, ndt[idx], 16):
+    for n in range(0, ndt[idx], 32):
       ts_inner = time.time()
       splitdelt = t.split(':')
       tdelta = datetime.timedelta(hours=int(splitdelt[0]),minutes=int(splitdelt[1]),seconds=float(splitdelt[2]))
@@ -87,6 +87,9 @@ for idx, t in enumerate(dt):
       trange=tstartn.strftime('%Y/%m/%d/%H:%M:%S.%f')+'+'+t
       print 'Cleaning '+trange+'... ('+str(n)+'/'+str(ndt[idx])+')'
       for idxt, tlist in enumerate(testlist):
+	if idxt < 18 and n == 0:
+		print 'Skipping idxt='+str(idxt)+', n='+str(n)+'...'
+		continue
    	print 'Cleaning with test params '+str(idxt + 1)+'...'
        	print tlist 
        	if idxt % 2 == 0:
