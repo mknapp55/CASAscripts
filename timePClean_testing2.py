@@ -69,7 +69,7 @@ test6b = {'npix': 1024, 'its': 5000, 'wp': 2048, 'fac': 1, 'spw': '15~105', 'wt'
 
 # Facets:
 test7 = {'npix': 1024, 'its': 5000, 'wp': 512, 'fac': 1, 'spw': '15~105', 'wt': 'natural', 'robust': 0.0, 'majcyc': 5, 'pixsize': str(synthbeamasec[15]*2)+'arcsec', 'th': '0.0mJy', 'nterms': 1, 'stokes': 'I', 'gain': 0.1}
-test7b = {'npix': 1024, 'its': 5000, 'wp': 512, 'fac': 1, 'spw': '15~105', 'wt': 'brigs', 'robust': 0.5, 'majcyc': 5, 'pixsize': str(synthbeamasec[15]*2)+'arcsec', 'th': '0.0mJy', 'nterms': 1, 'stokes': 'I', 'gain': 0.1}
+test7b = {'npix': 1024, 'its': 5000, 'wp': 512, 'fac': 1, 'spw': '15~105', 'wt': 'briggs', 'robust': 0.5, 'majcyc': 5, 'pixsize': str(synthbeamasec[15]*2)+'arcsec', 'th': '0.0mJy', 'nterms': 1, 'stokes': 'I', 'gain': 0.1}
 test8 = {'npix': 1024, 'its': 5000, 'wp': 512, 'fac': 3, 'spw': '15~105', 'wt': 'natural', 'robust': 0.0, 'majcyc': 5, 'pixsize': str(synthbeamasec[15]*2)+'arcsec', 'th': '0.0mJy', 'nterms': 1, 'stokes': 'I', 'gain': 0.1}
 test8b = {'npix': 1024, 'its': 5000, 'wp': 512, 'fac': 3, 'spw': '15~105', 'wt': 'briggs', 'robust': 0.5, 'majcyc': 5, 'pixsize': str(synthbeamasec[15]*2)+'arcsec', 'th': '0.0mJy', 'nterms': 1, 'stokes': 'I', 'gain': 0.1}
 test9 = {'npix': 1024, 'its': 5000, 'wp': 512, 'fac': 5, 'spw': '15~105', 'wt': 'natural', 'robust': 0.0, 'majcyc': 5, 'pixsize': str(synthbeamasec[15]*2)+'arcsec', 'th': '0.0mJy', 'nterms': 1, 'stokes': 'I', 'gain': 0.1}
@@ -109,6 +109,7 @@ th = '0.0Jy'
 '''
 rmst = []
 rt_t = []
+rtout = []
 
 # Time chunks:
 dt = ['0:05:37.5']#, '0:11:15', '0:15:00', '0:22:30', '0:30:00', '0:45:00', '1:00:00', '1:30:00','2:00:00', '3:00:00', '6:00:00']
@@ -132,32 +133,40 @@ for idx, t in enumerate(dt):
         print 'Cleaning with test params '+str(idxt + 1)+'...'
         print tlist 
         if idxt % 2 == 0:
-          tstring = '_tp'+str(idxt)+'b'
+          tstring = '_tp'+str(int(idxt/2+1))
         else:
-          tstring = '_tp'+str(idxt)
+          tstring = '_tp'+str(int (floor(idxt/2)+1))+'b'
         name = 'Ptimesteps_flg1_dt'+splitdelt[0]+'-'+splitdelt[1]+'-'+splitdelt[2]+tstring+'_n'+str(n)+'_it'+str(tlist['its'])+'_wp'+str(tlist['wp'])+'_facets'+str(tlist['fac'])
-        if tlist['wt'] == 'natural':
-		      print 'Natural weighting'
-        	pclean(vis, spw=tlist['spw'], timerange=trange, field='0', mode='continuum', ftmachine='wproject', alg='clark', wprojplanes=tlist['wp'], facets=tlist['fac'], majorcycles=tlist['majcyc'], imagename=name, niter=tlist['its'], interactive=False, imsize=[tlist['npix'], tlist['npix']], cell=tlist['pixsize'], uvrange='', weighting=tlist['wt'], stokes=tlist['stokes'], threshold=tlist['th'], nterms=tlist['nterms'], gain=tlist['gain'])
-	       else:
-		      print 'Briggs weighting'
-		      pclean(vis, spw=tlist['spw'], timerange=trange, field='0', mode='continuum', ftmachine='wproject', alg='clark', wprojplanes=tlist['wp'], facets=tlist['fac'], majorcycles=tlist['majcyc'], imagename=name, niter=tlist['its'], interactive=False, imsize=[tlist['npix'], tlist['npix']], cell=tlist['pixsize'], uvrange='', weighting=tlist['wt'], robust=tlist['robust'], stokes=tlist['stokes'], threshold=tlist['th'], nterms=tlist['nterms'], gain=tlist['gain'])
+        try:
+		if tlist['wt'] == 'natural':
+			print 'Natural weighting'
+			pclean(vis, spw=tlist['spw'], timerange=trange, field='0', mode='continuum', ftmachine='wproject', alg='clark', wprojplanes=tlist['wp'], facets=tlist['fac'], majorcycles=tlist['majcyc'], imagename=name, niter=tlist['its'], interactive=False, imsize=[tlist['npix'], tlist['npix']], cell=tlist['pixsize'], uvrange='', weighting=tlist['wt'], stokes=tlist['stokes'], threshold=tlist['th'], nterms=tlist['nterms'], gain=tlist['gain'])
+		else:
+			print 'Briggs weighting'
+			pclean(vis, spw=tlist['spw'], timerange=trange, field='0', mode='continuum', ftmachine='wproject', alg='clark', wprojplanes=tlist['wp'], facets=tlist['fac'], majorcycles=tlist['majcyc'], imagename=name, niter=tlist['its'], interactive=False, imsize=[tlist['npix'], tlist['npix']], cell=tlist['pixsize'], uvrange='', weighting=tlist['wt'], robust=tlist['robust'], stokes=tlist['stokes'], threshold=tlist['th'], nterms=tlist['nterms'], gain=tlist['gain'])
 
-        tmp = imstat(name+'.image')
-        print name+'.image'
-        tmp2 = [tmp['max'][0], tmp['min'][0], tmp['mean'][0], tmp['sigma'][0], tmp['rms'][0], tmp['median'][0], tmp['maxpos'][0],tmp['maxpos'][1], tmp['minpos'][0], tmp['minpos'][1]]
-        rmst.append(tmp['rms'][0])
-        print 'Clean finished for time range %s, RMS = %f.' % (trange, tmp['rms'][0])
-        print 'Results of imstat: '
-        print tmp2
-        tf_inner = time.time()
-        rt_t.append(tf_inner-ts_inner)
-        print 'Run time: '+str(rt_t[-1])
-        lf = open(fname, 'a')
-        lf.write(datetime.datetime.today().strftime('%m/%d/%Y %H:%M:%S')+','+trange+','+str(rt_t[-1])+','+str(tmp['rms'][0])+'\n')
-        lf.close()
-        tmp = []
-        tmp2 = []
+		tmp = imstat(name+'.image')
+		print name+'.image'
+		tmp2 = [tmp['max'][0], tmp['min'][0], tmp['mean'][0], tmp['sigma'][0], tmp['rms'][0], tmp['median'][0], tmp['maxpos'][0],tmp['maxpos'][1], tmp['minpos'][0], tmp['minpos'][1]]
+		rmst.append(tmp['rms'][0])
+		print 'Clean finished for time range %s, RMS = %f.' % (trange, tmp['rms'][0])
+		print 'Results of imstat: '
+		print tmp2
+		tf_inner = time.time()
+		rt_t.append(tf_inner-ts_inner)
+		print 'Run time: '+str(rt_t[-1])
+		lf = open(fname, 'a')
+		lf.write(name+'\n')
+		lf.write(datetime.datetime.today().strftime('%m/%d/%Y %H:%M:%S')+','+trange+','+str(rt_t[-1])+','+str(tmp['rms'][0])+'\n')
+		lf.close()
+		tmp = []
+		tmp2 = []
+	except:
+		print 'There was a problem running this block of code (idx='+str(idx)+', n='+str(n)+', idxt='+str(idxt)+')'
+		lf=open(fname, 'a')
+		lf.write('There was a problem with this iteration (testparams '+tstring+', idx='+str(idx)+', n='+str(n)+', idxt='+str(idxt)+')\n')
+		lf.close()
+		continue
     tf_outer = time.time()
     rtout.append(tf_outer-ts_outer)
     print 'Outer loop run time '+ str(idx)+': '+str((tf_outer-ts_outer)/60)+' minutes'

@@ -1,0 +1,29 @@
+#log# Automatic Logger file. *** THIS MUST BE THE FIRST LINE ***
+#log# DO NOT CHANGE THIS LINE OR THE TWO BELOW -* coding: UTF-8 *-
+#log# opts = Struct({'__allownew': True,
+ 'autocall': 2,
+ 'banner': 0,
+ 'colors': 'LightBG',
+ 'ipythondir': '/home/mknapp/.casa/ipython',
+ 'logfile': 'ipython-20141012-204219.log',
+ 'messages': 0,
+ 'prompt_in1': 'CASA <\\#>: '})
+#log# args = []
+#log# It is safe to make manual edits below here.
+#log#-----------------------------------------------------------------------
+execfile("/usr/local/bin/lib64/python2.7/assignmentFilter.py")
+listobs('L85562_all_flagged.MS/
+listobs('L85562-60~75.MS/.MS/
+listobs('L85562-60~75.MS')
+import datetime
+tstart = '21:37:11.0'
+tstartday = '24-Jan-2013'
+tst = tstartday+'-'+tstart
+tst
+tstartdt = datetime.datetime.strptime(tst, '%d-%b-%Y-%H:%M:%S.%f')
+tstartdt
+dt = ['0:05:37.5', '0:11:15', '0:15:00', '0:22:30', '0:30:00', '0:45:00', '1:00:00', '1:30:00','2:00:00', '3:00:00', '6:00:00']
+_ip.system("ls -F ")
+_ip.system("ls -F *.py")
+_ip.system("mv -i mfsclean_pyramid.py mfsclean_pyramid_cluster.py")
+_ip.system("ls -F *.py")

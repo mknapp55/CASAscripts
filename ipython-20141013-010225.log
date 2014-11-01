@@ -1,0 +1,21 @@
+#log# Automatic Logger file. *** THIS MUST BE THE FIRST LINE ***
+#log# DO NOT CHANGE THIS LINE OR THE TWO BELOW -* coding: UTF-8 *-
+#log# opts = Struct({'__allownew': True,
+ 'autocall': 2,
+ 'banner': 0,
+ 'colors': 'LightBG',
+ 'ipythondir': '/home/mknapp/.casa/ipython',
+ 'logfile': 'ipython-20141013-010225.log',
+ 'messages': 0,
+ 'prompt_in1': 'CASA <\\#>: '})
+#log# args = []
+#log# It is safe to make manual edits below here.
+#log#-----------------------------------------------------------------------
+execfile("/usr/local/bin/lib64/python2.7/assignmentFilter.py")
+imhead('timesteps_flg1_dt0-05-37.5_ne
+imhead('timesteps_flg1_dt0-05-37.5_n0_it1000_wp256_facets8_npix2048.image')
+from simple_cluster import *
+sc=simple_cluster()
+sc.init_cluster('clusterconfig30.txt', 'mk30')
+execfile('mfsclean_pyramid.py')
+execfile('timePClean.py')

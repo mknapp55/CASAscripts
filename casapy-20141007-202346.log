@@ -1,0 +1,262 @@
+2014-10-07 20:25:01	INFO	casa::::casa	---
+2014-10-07 20:25:01	INFO	casa::::casa	CASA Version 4.2.0 (stable r27479)
+2014-10-07 20:25:01	INFO	casa::::casa	  Tagged on: Mon, 09 Sep 2013
+2014-10-07 20:25:45	INFO	concat::utils::verify	Verifying arguments....File existence checking failed for vis ["*.MS"]
+2014-10-07 20:25:45	WARN	concat::utils::verify	Argument vis failed to verify.
+2014-10-07 20:25:45	SEVERE	concat::::casa	An error occurred running task concat.
+2014-10-07 20:27:36	INFO	concat::::casa	
+2014-10-07 20:27:36	INFO	concat::::casa+	##########################################
+2014-10-07 20:27:36	INFO	concat::::casa+	##### Begin Task: concat             #####
+2014-10-07 20:27:36	INFO	concat::::casa	concat(vis=['L85562_SB068_uv.dppp.MS', 'L85562_SB065_uv.dppp.MS', 'L85562_SB070_uv.dppp.MS', 'L85562_SB062_uv.dppp.MS', 'L85562_SB067_uv.dppp.MS', 'L85562_SB063_uv.dppp.MS', 'L85562_SB061_uv.dppp.MS', 'L85562_SB072_uv.dppp.MS', 'L85562_SB060_uv.dppp.MS', 'L85562_SB074_uv.dppp.MS', 'L85562_SB075_uv.dppp.MS', 'L85562_SB071_uv.dppp.MS', 'L85562_SB073_uv.dppp.MS', 'L85562_SB069_uv.dppp.MS', 'L85562_SB064_uv.dppp.MS', 'L85562_SB066_uv.dppp.MS'],concatvis="L85562-60~75.MS",freqtol="",dirtol="",
+2014-10-07 20:27:36	INFO	concat::::casa+	        respectname=False,timesort=False,copypointing=True,visweightscale=[])
+2014-10-07 20:27:43	INFO	concat::::casa	copying L85562_SB068_uv.dppp.MS to L85562-60~75.MS
+2014-10-07 20:27:46	INFO	concat::::casa	concatenating L85562_SB065_uv.dppp.MS into L85562-60~75.MS
+2014-10-07 20:27:46	INFO	MSConcat::concatenate 	Appending /home/mknapp/L85562_SB065_uv.dppp.MS to /home/mknapp/L85562-60~75.MS
+2014-10-07 20:27:46	INFO	MSConcat::concatenate 	No valid state tables present. Result won't have one either.
+2014-10-07 20:27:46	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the data description subtable
+2014-10-07 20:27:46	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the spectral window subtable
+2014-10-07 20:27:46	INFO	MSConcat::concatenate 	Added 0 rows and matched 37 from the antenna subtable
+2014-10-07 20:27:46	INFO	MSConcat::concatenate +	Added 0 rows to the feed subtable
+2014-10-07 20:27:46	INFO	MSConcat::concatenate +	Added 0 rows and matched 1 from the field subtable
+2014-10-07 20:27:46	INFO	MSConcat::copyObservation	Added 0 rows and matched 1 rows in the observation subtable.
+2014-10-07 20:27:46	INFO	MSConcat::copyPointing	No valid pointing tables present. Result won't have one either.
+2014-10-07 20:27:46	WARN	MSConcat::concatenate (file /var/rpmbuild/BUILD/casapy-stable/casapy-stable-42.0.26465/casacore/ms/MeasurementSets/MSConcat.cc, line 805)	Zero or negative scan numbers in MS. May lead to duplicate scan numbers in concatenated MS.
+2014-10-07 20:28:06	INFO	concat::::casa	concatenating L85562_SB070_uv.dppp.MS into L85562-60~75.MS
+2014-10-07 20:28:07	INFO	MSConcat::concatenate 	Appending /home/mknapp/L85562_SB070_uv.dppp.MS to /home/mknapp/L85562-60~75.MS
+2014-10-07 20:28:07	INFO	MSConcat::concatenate 	No valid state tables present. Result won't have one either.
+2014-10-07 20:28:07	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the data description subtable
+2014-10-07 20:28:07	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the spectral window subtable
+2014-10-07 20:28:07	INFO	MSConcat::concatenate 	Added 0 rows and matched 37 from the antenna subtable
+2014-10-07 20:28:07	INFO	MSConcat::concatenate +	Added 0 rows to the feed subtable
+2014-10-07 20:28:07	INFO	MSConcat::concatenate +	Added 0 rows and matched 1 from the field subtable
+2014-10-07 20:28:07	INFO	MSConcat::copyObservation	Added 0 rows and matched 1 rows in the observation subtable.
+2014-10-07 20:28:07	INFO	MSConcat::copyPointing	No valid pointing tables present. Result won't have one either.
+2014-10-07 20:28:07	WARN	MSConcat::concatenate (file /var/rpmbuild/BUILD/casapy-stable/casapy-stable-42.0.26465/casacore/ms/MeasurementSets/MSConcat.cc, line 805)	Zero or negative scan numbers in MS. May lead to duplicate scan numbers in concatenated MS.
+2014-10-07 20:28:27	INFO	concat::::casa	concatenating L85562_SB062_uv.dppp.MS into L85562-60~75.MS
+2014-10-07 20:28:28	INFO	MSConcat::concatenate 	Appending /home/mknapp/L85562_SB062_uv.dppp.MS to /home/mknapp/L85562-60~75.MS
+2014-10-07 20:28:28	INFO	MSConcat::concatenate 	No valid state tables present. Result won't have one either.
+2014-10-07 20:28:28	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the data description subtable
+2014-10-07 20:28:28	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the spectral window subtable
+2014-10-07 20:28:28	INFO	MSConcat::concatenate 	Added 0 rows and matched 37 from the antenna subtable
+2014-10-07 20:28:28	INFO	MSConcat::concatenate +	Added 0 rows to the feed subtable
+2014-10-07 20:28:28	INFO	MSConcat::concatenate +	Added 0 rows and matched 1 from the field subtable
+2014-10-07 20:28:28	INFO	MSConcat::copyObservation	Added 0 rows and matched 1 rows in the observation subtable.
+2014-10-07 20:28:28	INFO	MSConcat::copyPointing	No valid pointing tables present. Result won't have one either.
+2014-10-07 20:28:28	WARN	MSConcat::concatenate (file /var/rpmbuild/BUILD/casapy-stable/casapy-stable-42.0.26465/casacore/ms/MeasurementSets/MSConcat.cc, line 805)	Zero or negative scan numbers in MS. May lead to duplicate scan numbers in concatenated MS.
+2014-10-07 20:28:48	INFO	concat::::casa	concatenating L85562_SB067_uv.dppp.MS into L85562-60~75.MS
+2014-10-07 20:28:48	INFO	MSConcat::concatenate 	Appending /home/mknapp/L85562_SB067_uv.dppp.MS to /home/mknapp/L85562-60~75.MS
+2014-10-07 20:28:48	INFO	MSConcat::concatenate 	No valid state tables present. Result won't have one either.
+2014-10-07 20:28:48	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the data description subtable
+2014-10-07 20:28:48	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the spectral window subtable
+2014-10-07 20:28:48	INFO	MSConcat::concatenate 	Added 0 rows and matched 37 from the antenna subtable
+2014-10-07 20:28:48	INFO	MSConcat::concatenate +	Added 0 rows to the feed subtable
+2014-10-07 20:28:48	INFO	MSConcat::concatenate +	Added 0 rows and matched 1 from the field subtable
+2014-10-07 20:28:48	INFO	MSConcat::copyObservation	Added 0 rows and matched 1 rows in the observation subtable.
+2014-10-07 20:28:48	INFO	MSConcat::copyPointing	No valid pointing tables present. Result won't have one either.
+2014-10-07 20:28:48	WARN	MSConcat::concatenate (file /var/rpmbuild/BUILD/casapy-stable/casapy-stable-42.0.26465/casacore/ms/MeasurementSets/MSConcat.cc, line 805)	Zero or negative scan numbers in MS. May lead to duplicate scan numbers in concatenated MS.
+2014-10-07 20:29:09	INFO	concat::::casa	concatenating L85562_SB063_uv.dppp.MS into L85562-60~75.MS
+2014-10-07 20:29:09	INFO	MSConcat::concatenate 	Appending /home/mknapp/L85562_SB063_uv.dppp.MS to /home/mknapp/L85562-60~75.MS
+2014-10-07 20:29:09	INFO	MSConcat::concatenate 	No valid state tables present. Result won't have one either.
+2014-10-07 20:29:09	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the data description subtable
+2014-10-07 20:29:09	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the spectral window subtable
+2014-10-07 20:29:09	INFO	MSConcat::concatenate 	Added 0 rows and matched 37 from the antenna subtable
+2014-10-07 20:29:09	INFO	MSConcat::concatenate +	Added 0 rows to the feed subtable
+2014-10-07 20:29:09	INFO	MSConcat::concatenate +	Added 0 rows and matched 1 from the field subtable
+2014-10-07 20:29:09	INFO	MSConcat::copyObservation	Added 0 rows and matched 1 rows in the observation subtable.
+2014-10-07 20:29:09	INFO	MSConcat::copyPointing	No valid pointing tables present. Result won't have one either.
+2014-10-07 20:29:09	WARN	MSConcat::concatenate (file /var/rpmbuild/BUILD/casapy-stable/casapy-stable-42.0.26465/casacore/ms/MeasurementSets/MSConcat.cc, line 805)	Zero or negative scan numbers in MS. May lead to duplicate scan numbers in concatenated MS.
+2014-10-07 20:29:29	INFO	concat::::casa	concatenating L85562_SB061_uv.dppp.MS into L85562-60~75.MS
+2014-10-07 20:29:30	INFO	MSConcat::concatenate 	Appending /home/mknapp/L85562_SB061_uv.dppp.MS to /home/mknapp/L85562-60~75.MS
+2014-10-07 20:29:30	INFO	MSConcat::concatenate 	No valid state tables present. Result won't have one either.
+2014-10-07 20:29:30	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the data description subtable
+2014-10-07 20:29:30	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the spectral window subtable
+2014-10-07 20:29:30	INFO	MSConcat::concatenate 	Added 0 rows and matched 37 from the antenna subtable
+2014-10-07 20:29:30	INFO	MSConcat::concatenate +	Added 0 rows to the feed subtable
+2014-10-07 20:29:30	INFO	MSConcat::concatenate +	Added 0 rows and matched 1 from the field subtable
+2014-10-07 20:29:30	INFO	MSConcat::copyObservation	Added 0 rows and matched 1 rows in the observation subtable.
+2014-10-07 20:29:30	INFO	MSConcat::copyPointing	No valid pointing tables present. Result won't have one either.
+2014-10-07 20:29:30	WARN	MSConcat::concatenate (file /var/rpmbuild/BUILD/casapy-stable/casapy-stable-42.0.26465/casacore/ms/MeasurementSets/MSConcat.cc, line 805)	Zero or negative scan numbers in MS. May lead to duplicate scan numbers in concatenated MS.
+2014-10-07 20:29:50	INFO	concat::::casa	concatenating L85562_SB072_uv.dppp.MS into L85562-60~75.MS
+2014-10-07 20:29:50	INFO	MSConcat::concatenate 	Appending /home/mknapp/L85562_SB072_uv.dppp.MS to /home/mknapp/L85562-60~75.MS
+2014-10-07 20:29:50	INFO	MSConcat::concatenate 	No valid state tables present. Result won't have one either.
+2014-10-07 20:29:50	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the data description subtable
+2014-10-07 20:29:50	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the spectral window subtable
+2014-10-07 20:29:50	INFO	MSConcat::concatenate 	Added 0 rows and matched 37 from the antenna subtable
+2014-10-07 20:29:50	INFO	MSConcat::concatenate +	Added 0 rows to the feed subtable
+2014-10-07 20:29:50	INFO	MSConcat::concatenate +	Added 0 rows and matched 1 from the field subtable
+2014-10-07 20:29:50	INFO	MSConcat::copyObservation	Added 0 rows and matched 1 rows in the observation subtable.
+2014-10-07 20:29:50	INFO	MSConcat::copyPointing	No valid pointing tables present. Result won't have one either.
+2014-10-07 20:29:51	WARN	MSConcat::concatenate (file /var/rpmbuild/BUILD/casapy-stable/casapy-stable-42.0.26465/casacore/ms/MeasurementSets/MSConcat.cc, line 805)	Zero or negative scan numbers in MS. May lead to duplicate scan numbers in concatenated MS.
+2014-10-07 20:30:11	INFO	concat::::casa	concatenating L85562_SB060_uv.dppp.MS into L85562-60~75.MS
+2014-10-07 20:30:11	INFO	MSConcat::concatenate 	Appending /home/mknapp/L85562_SB060_uv.dppp.MS to /home/mknapp/L85562-60~75.MS
+2014-10-07 20:30:11	INFO	MSConcat::concatenate 	No valid state tables present. Result won't have one either.
+2014-10-07 20:30:11	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the data description subtable
+2014-10-07 20:30:11	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the spectral window subtable
+2014-10-07 20:30:11	INFO	MSConcat::concatenate 	Added 0 rows and matched 37 from the antenna subtable
+2014-10-07 20:30:11	INFO	MSConcat::concatenate +	Added 0 rows to the feed subtable
+2014-10-07 20:30:11	INFO	MSConcat::concatenate +	Added 0 rows and matched 1 from the field subtable
+2014-10-07 20:30:11	INFO	MSConcat::copyObservation	Added 0 rows and matched 1 rows in the observation subtable.
+2014-10-07 20:30:11	INFO	MSConcat::copyPointing	No valid pointing tables present. Result won't have one either.
+2014-10-07 20:30:11	WARN	MSConcat::concatenate (file /var/rpmbuild/BUILD/casapy-stable/casapy-stable-42.0.26465/casacore/ms/MeasurementSets/MSConcat.cc, line 805)	Zero or negative scan numbers in MS. May lead to duplicate scan numbers in concatenated MS.
+2014-10-07 20:30:31	INFO	concat::::casa	concatenating L85562_SB074_uv.dppp.MS into L85562-60~75.MS
+2014-10-07 20:30:32	INFO	MSConcat::concatenate 	Appending /home/mknapp/L85562_SB074_uv.dppp.MS to /home/mknapp/L85562-60~75.MS
+2014-10-07 20:30:32	INFO	MSConcat::concatenate 	No valid state tables present. Result won't have one either.
+2014-10-07 20:30:32	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the data description subtable
+2014-10-07 20:30:32	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the spectral window subtable
+2014-10-07 20:30:32	INFO	MSConcat::concatenate 	Added 0 rows and matched 37 from the antenna subtable
+2014-10-07 20:30:32	INFO	MSConcat::concatenate +	Added 0 rows to the feed subtable
+2014-10-07 20:30:32	INFO	MSConcat::concatenate +	Added 0 rows and matched 1 from the field subtable
+2014-10-07 20:30:32	INFO	MSConcat::copyObservation	Added 0 rows and matched 1 rows in the observation subtable.
+2014-10-07 20:30:32	INFO	MSConcat::copyPointing	No valid pointing tables present. Result won't have one either.
+2014-10-07 20:30:32	WARN	MSConcat::concatenate (file /var/rpmbuild/BUILD/casapy-stable/casapy-stable-42.0.26465/casacore/ms/MeasurementSets/MSConcat.cc, line 805)	Zero or negative scan numbers in MS. May lead to duplicate scan numbers in concatenated MS.
+2014-10-07 20:30:52	INFO	concat::::casa	concatenating L85562_SB075_uv.dppp.MS into L85562-60~75.MS
+2014-10-07 20:30:52	INFO	MSConcat::concatenate 	Appending /home/mknapp/L85562_SB075_uv.dppp.MS to /home/mknapp/L85562-60~75.MS
+2014-10-07 20:30:52	INFO	MSConcat::concatenate 	No valid state tables present. Result won't have one either.
+2014-10-07 20:30:52	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the data description subtable
+2014-10-07 20:30:52	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the spectral window subtable
+2014-10-07 20:30:52	INFO	MSConcat::concatenate 	Added 0 rows and matched 37 from the antenna subtable
+2014-10-07 20:30:52	INFO	MSConcat::concatenate +	Added 0 rows to the feed subtable
+2014-10-07 20:30:52	INFO	MSConcat::concatenate +	Added 0 rows and matched 1 from the field subtable
+2014-10-07 20:30:52	INFO	MSConcat::copyObservation	Added 0 rows and matched 1 rows in the observation subtable.
+2014-10-07 20:30:52	INFO	MSConcat::copyPointing	No valid pointing tables present. Result won't have one either.
+2014-10-07 20:30:52	WARN	MSConcat::concatenate (file /var/rpmbuild/BUILD/casapy-stable/casapy-stable-42.0.26465/casacore/ms/MeasurementSets/MSConcat.cc, line 805)	Zero or negative scan numbers in MS. May lead to duplicate scan numbers in concatenated MS.
+2014-10-07 20:31:12	INFO	concat::::casa	concatenating L85562_SB071_uv.dppp.MS into L85562-60~75.MS
+2014-10-07 20:31:12	INFO	MSConcat::concatenate 	Appending /home/mknapp/L85562_SB071_uv.dppp.MS to /home/mknapp/L85562-60~75.MS
+2014-10-07 20:31:12	INFO	MSConcat::concatenate 	No valid state tables present. Result won't have one either.
+2014-10-07 20:31:12	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the data description subtable
+2014-10-07 20:31:12	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the spectral window subtable
+2014-10-07 20:31:12	INFO	MSConcat::concatenate 	Added 0 rows and matched 37 from the antenna subtable
+2014-10-07 20:31:12	INFO	MSConcat::concatenate +	Added 0 rows to the feed subtable
+2014-10-07 20:31:12	INFO	MSConcat::concatenate +	Added 0 rows and matched 1 from the field subtable
+2014-10-07 20:31:12	INFO	MSConcat::copyObservation	Added 0 rows and matched 1 rows in the observation subtable.
+2014-10-07 20:31:12	INFO	MSConcat::copyPointing	No valid pointing tables present. Result won't have one either.
+2014-10-07 20:31:12	WARN	MSConcat::concatenate (file /var/rpmbuild/BUILD/casapy-stable/casapy-stable-42.0.26465/casacore/ms/MeasurementSets/MSConcat.cc, line 805)	Zero or negative scan numbers in MS. May lead to duplicate scan numbers in concatenated MS.
+2014-10-07 20:31:33	INFO	concat::::casa	concatenating L85562_SB073_uv.dppp.MS into L85562-60~75.MS
+2014-10-07 20:31:33	INFO	MSConcat::concatenate 	Appending /home/mknapp/L85562_SB073_uv.dppp.MS to /home/mknapp/L85562-60~75.MS
+2014-10-07 20:31:33	INFO	MSConcat::concatenate 	No valid state tables present. Result won't have one either.
+2014-10-07 20:31:33	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the data description subtable
+2014-10-07 20:31:33	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the spectral window subtable
+2014-10-07 20:31:33	INFO	MSConcat::concatenate 	Added 0 rows and matched 37 from the antenna subtable
+2014-10-07 20:31:33	INFO	MSConcat::concatenate +	Added 0 rows to the feed subtable
+2014-10-07 20:31:33	INFO	MSConcat::concatenate +	Added 0 rows and matched 1 from the field subtable
+2014-10-07 20:31:33	INFO	MSConcat::copyObservation	Added 0 rows and matched 1 rows in the observation subtable.
+2014-10-07 20:31:33	INFO	MSConcat::copyPointing	No valid pointing tables present. Result won't have one either.
+2014-10-07 20:31:33	WARN	MSConcat::concatenate (file /var/rpmbuild/BUILD/casapy-stable/casapy-stable-42.0.26465/casacore/ms/MeasurementSets/MSConcat.cc, line 805)	Zero or negative scan numbers in MS. May lead to duplicate scan numbers in concatenated MS.
+2014-10-07 20:31:53	INFO	concat::::casa	concatenating L85562_SB069_uv.dppp.MS into L85562-60~75.MS
+2014-10-07 20:31:53	INFO	MSConcat::concatenate 	Appending /home/mknapp/L85562_SB069_uv.dppp.MS to /home/mknapp/L85562-60~75.MS
+2014-10-07 20:31:53	INFO	MSConcat::concatenate 	No valid state tables present. Result won't have one either.
+2014-10-07 20:31:53	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the data description subtable
+2014-10-07 20:31:53	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the spectral window subtable
+2014-10-07 20:31:53	INFO	MSConcat::concatenate 	Added 0 rows and matched 37 from the antenna subtable
+2014-10-07 20:31:53	INFO	MSConcat::concatenate +	Added 0 rows to the feed subtable
+2014-10-07 20:31:53	INFO	MSConcat::concatenate +	Added 0 rows and matched 1 from the field subtable
+2014-10-07 20:31:53	INFO	MSConcat::copyObservation	Added 0 rows and matched 1 rows in the observation subtable.
+2014-10-07 20:31:53	INFO	MSConcat::copyPointing	No valid pointing tables present. Result won't have one either.
+2014-10-07 20:31:53	WARN	MSConcat::concatenate (file /var/rpmbuild/BUILD/casapy-stable/casapy-stable-42.0.26465/casacore/ms/MeasurementSets/MSConcat.cc, line 805)	Zero or negative scan numbers in MS. May lead to duplicate scan numbers in concatenated MS.
+2014-10-07 20:32:15	INFO	concat::::casa	concatenating L85562_SB064_uv.dppp.MS into L85562-60~75.MS
+2014-10-07 20:32:15	INFO	MSConcat::concatenate 	Appending /home/mknapp/L85562_SB064_uv.dppp.MS to /home/mknapp/L85562-60~75.MS
+2014-10-07 20:32:15	INFO	MSConcat::concatenate 	No valid state tables present. Result won't have one either.
+2014-10-07 20:32:15	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the data description subtable
+2014-10-07 20:32:15	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the spectral window subtable
+2014-10-07 20:32:15	INFO	MSConcat::concatenate 	Added 0 rows and matched 37 from the antenna subtable
+2014-10-07 20:32:15	INFO	MSConcat::concatenate +	Added 0 rows to the feed subtable
+2014-10-07 20:32:15	INFO	MSConcat::concatenate +	Added 0 rows and matched 1 from the field subtable
+2014-10-07 20:32:15	INFO	MSConcat::copyObservation	Added 0 rows and matched 1 rows in the observation subtable.
+2014-10-07 20:32:15	INFO	MSConcat::copyPointing	No valid pointing tables present. Result won't have one either.
+2014-10-07 20:32:16	WARN	MSConcat::concatenate (file /var/rpmbuild/BUILD/casapy-stable/casapy-stable-42.0.26465/casacore/ms/MeasurementSets/MSConcat.cc, line 805)	Zero or negative scan numbers in MS. May lead to duplicate scan numbers in concatenated MS.
+2014-10-07 20:32:36	INFO	concat::::casa	concatenating L85562_SB066_uv.dppp.MS into L85562-60~75.MS
+2014-10-07 20:32:36	INFO	MSConcat::concatenate 	Appending /home/mknapp/L85562_SB066_uv.dppp.MS to /home/mknapp/L85562-60~75.MS
+2014-10-07 20:32:36	INFO	MSConcat::concatenate 	No valid state tables present. Result won't have one either.
+2014-10-07 20:32:36	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the data description subtable
+2014-10-07 20:32:36	INFO	MSConcat::concatenate 	Added 1 rows and matched 0 from the spectral window subtable
+2014-10-07 20:32:36	INFO	MSConcat::concatenate 	Added 0 rows and matched 37 from the antenna subtable
+2014-10-07 20:32:36	INFO	MSConcat::concatenate +	Added 0 rows to the feed subtable
+2014-10-07 20:32:36	INFO	MSConcat::concatenate +	Added 0 rows and matched 1 from the field subtable
+2014-10-07 20:32:36	INFO	MSConcat::copyObservation	Added 0 rows and matched 1 rows in the observation subtable.
+2014-10-07 20:32:36	INFO	MSConcat::copyPointing	No valid pointing tables present. Result won't have one either.
+2014-10-07 20:32:36	WARN	MSConcat::concatenate (file /var/rpmbuild/BUILD/casapy-stable/casapy-stable-42.0.26465/casacore/ms/MeasurementSets/MSConcat.cc, line 805)	Zero or negative scan numbers in MS. May lead to duplicate scan numbers in concatenated MS.
+2014-10-07 20:32:56	INFO	concat::::casa	##### End Task: concat               #####
+2014-10-07 20:32:56	INFO	concat::::casa+	##########################################
+2014-10-07 20:33:46	INFO	listobs::::casa	
+2014-10-07 20:33:46	INFO	listobs::::casa+	##########################################
+2014-10-07 20:33:46	INFO	listobs::::casa+	##### Begin Task: listobs            #####
+2014-10-07 20:33:46	INFO	listobs::::casa	listobs(vis="L85562-60~75.MS",selectdata=True,spw="",field="",
+2014-10-07 20:33:46	INFO	listobs::::casa+	        antenna="",uvrange="",timerange="",correlation="",scan="",
+2014-10-07 20:33:46	INFO	listobs::::casa+	        intent="",feed="",array="",observation="",verbose=True,
+2014-10-07 20:33:46	INFO	listobs::::casa+	        listfile="",listunfl=False,cachesize=50)
+2014-10-07 20:33:46	INFO	listobs::ms::summary	================================================================================
+2014-10-07 20:33:46	INFO	listobs::ms::summary+	           MeasurementSet Name:  /home/mknapp/L85562-60~75.MS      MS Version 2
+2014-10-07 20:33:46	INFO	listobs::ms::summary+	================================================================================
+2014-10-07 20:33:46	INFO	listobs::ms::summary+	   Observer: unknown     Project: LC0_017  
+2014-10-07 20:33:46	INFO	listobs::ms::summary+	Observation: LOFAR
+2014-10-07 20:33:46	INFO	listobs::ms::summary	Data records: 24261936       Total integration time = 21590 seconds
+2014-10-07 20:33:46	INFO	listobs::ms::summary+	   Observed from   24-Jan-2013/21:37:16.0   to   25-Jan-2013/03:37:06.0 (UTC)
+2014-10-07 20:34:20	INFO	listobs::ms::summary	
+2014-10-07 20:34:20	INFO	listobs::ms::summary+	   ObservationID = 0         ArrayID = 0
+2014-10-07 20:34:20	INFO	listobs::ms::summary+	  Date        Timerange (UTC)          Scan  FldId FieldName             nRows     SpwIds   Average Interval(s)    ScanIntent
+2014-10-07 20:34:20	INFO	listobs::ms::summary+	  24-Jan-2013/21:37:11.0 - 03:37:11.0     0      0 BEAM_0                24261936  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]  [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10] 
+2014-10-07 20:34:20	INFO	listobs::ms::summary	           (nRows = Total number of rows per scan) 
+2014-10-07 20:34:23	INFO	listobs::ms::summary	Fields: 1
+2014-10-07 20:34:23	INFO	listobs::ms::summary+	  ID   Code Name                RA               Decl           Epoch        nRows
+2014-10-07 20:34:23	INFO	listobs::ms::summary+	  0         BEAM_0              09:22:37.570001 +50.37.13.50001 J2000     24261936
+2014-10-07 20:34:25	INFO	listobs::ms::summary	Spectral Windows:  (16 unique spectral windows and 1 unique polarization setups)
+2014-10-07 20:34:25	INFO	listobs::ms::summary+	  SpwID  Name   #Chans   Frame   Ch0(MHz)  ChanWid(kHz)  TotBW(kHz)  Corrs          
+2014-10-07 20:34:25	INFO	listobs::ms::summary+	  0      SB-68      1   TOPO      56.639       195.312       195.3  XX  XY  YX  YY
+2014-10-07 20:34:25	INFO	listobs::ms::summary+	  1      SB-65      1   TOPO      55.467       195.312       195.3  XX  XY  YX  YY
+2014-10-07 20:34:25	INFO	listobs::ms::summary+	  2      SB-70      1   TOPO      57.420       195.312       195.3  XX  XY  YX  YY
+2014-10-07 20:34:25	INFO	listobs::ms::summary+	  3      SB-62      1   TOPO      54.295       195.312       195.3  XX  XY  YX  YY
+2014-10-07 20:34:25	INFO	listobs::ms::summary+	  4      SB-67      1   TOPO      56.248       195.312       195.3  XX  XY  YX  YY
+2014-10-07 20:34:25	INFO	listobs::ms::summary+	  5      SB-63      1   TOPO      54.686       195.312       195.3  XX  XY  YX  YY
+2014-10-07 20:34:25	INFO	listobs::ms::summary+	  6      SB-61      1   TOPO      53.905       195.312       195.3  XX  XY  YX  YY
+2014-10-07 20:34:25	INFO	listobs::ms::summary+	  7      SB-72      1   TOPO      58.202       195.312       195.3  XX  XY  YX  YY
+2014-10-07 20:34:25	INFO	listobs::ms::summary+	  8      SB-60      1   TOPO      53.514       195.312       195.3  XX  XY  YX  YY
+2014-10-07 20:34:25	INFO	listobs::ms::summary+	  9      SB-74      1   TOPO      58.983       195.312       195.3  XX  XY  YX  YY
+2014-10-07 20:34:25	INFO	listobs::ms::summary+	  10     SB-75      1   TOPO      59.373       195.312       195.3  XX  XY  YX  YY
+2014-10-07 20:34:25	INFO	listobs::ms::summary+	  11     SB-71      1   TOPO      57.811       195.312       195.3  XX  XY  YX  YY
+2014-10-07 20:34:25	INFO	listobs::ms::summary+	  12     SB-73      1   TOPO      58.592       195.312       195.3  XX  XY  YX  YY
+2014-10-07 20:34:25	INFO	listobs::ms::summary+	  13     SB-69      1   TOPO      57.030       195.312       195.3  XX  XY  YX  YY
+2014-10-07 20:34:25	INFO	listobs::ms::summary+	  14     SB-64      1   TOPO      55.077       195.312       195.3  XX  XY  YX  YY
+2014-10-07 20:34:25	INFO	listobs::ms::summary+	  15     SB-66      1   TOPO      55.858       195.312       195.3  XX  XY  YX  YY
+2014-10-07 20:34:29	INFO	listobs::ms::summary	The SOURCE table is absent: see the FIELD table
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	Antennas: 37:
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  ID   Name  Station   Diam.    Long.         Lat.                Offset from array center (m)                ITRF Geocentric coordinates (m)        
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	                                                                     East         North     Elevation               x               y               z
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  0    CS001LBALOFAR     86.0 m   +006.52.03.5  +52.43.34.0         -0.0011       -0.1629  6364571.6393  3826923.546000   460915.441000  5064643.489000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  1    CS002LBALOFAR     86.0 m   +006.52.11.4  +52.43.47.4         -0.0000       -0.1596  6364569.4862  3826577.066000   461022.948000  5064892.786000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  2    CS003LBALOFAR     86.0 m   +006.52.06.9  +52.43.50.3         -0.0007       -0.1590  6364569.2055  3826516.748000   460930.066000  5064946.457000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  3    CS004LBALOFAR     86.0 m   +006.52.06.5  +52.43.44.7         -0.0007       -0.1603  6364569.7456  3826654.197000   460939.576000  5064842.426000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  4    CS005LBALOFAR     86.0 m   +006.52.13.3  +52.43.43.5          0.0003       -0.1606  6364569.8679  3826668.750000   461069.550000  5064819.754000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  5    CS006LBALOFAR     86.0 m   +006.52.17.8  +52.43.46.0          0.0009       -0.1600  6364569.6261  3826596.730000   461145.178000  5064866.978000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  6    CS007LBALOFAR     86.0 m   +006.52.15.7  +52.43.48.8          0.0006       -0.1593  6364569.3555  3826533.361000   461098.966000  5064918.721000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  7    CS011LBALOFAR     86.0 m   +006.52.24.8  +52.43.42.5          0.0019       -0.1608  6364570.0773  3826667.069000   461285.849000  5064801.592000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  8    CS013LBALOFAR     86.0 m   +006.52.00.6  +52.43.57.8         -0.0016       -0.1572  6364568.6747  3826346.265000   460792.111000  5065087.136000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  9    CS017LBALOFAR     86.0 m   +006.52.37.6  +52.43.49.7          0.0038       -0.1591  6364569.3054  3826462.054000   461501.950000  5064935.827000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  10   CS021LBALOFAR     86.0 m   +006.51.46.8  +52.43.56.6         -0.0036       -0.1574  6364568.8453  3826406.543000   460538.604000  5065064.870000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  11   CS024LBALOFAR     86.0 m   +006.52.28.2  +52.43.22.0          0.0024       -0.1657  6364573.3474  3827161.234000   461409.408000  5064421.046000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  12   CS026LBALOFAR     86.0 m   +006.52.57.6  +52.43.50.8          0.0067       -0.1588  6364569.2088  3826390.916000   461869.852000  5064955.913000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  13   CS028LBALOFAR     86.0 m   +006.52.30.3  +52.44.25.6          0.0027       -0.1505  6364565.8837  3825600.445000   461260.593000  5065604.325000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  14   CS030LBALOFAR     86.0 m   +006.51.41.2  +52.44.13.2         -0.0044       -0.1535  6364566.7680  3826014.266000   460387.389000  5065372.328000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  15   CS031LBALOFAR     86.0 m   +006.51.32.5  +52.43.56.6         -0.0056       -0.1575  6364568.7887  3826439.996000   460273.833000  5065063.594000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  16   CS032LBALOFAR     86.0 m   +006.51.35.7  +52.43.37.8         -0.0052       -0.1619  6364571.3712  3826891.573000   460387.910000  5064715.292000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  17   CS101LBALOFAR     86.0 m   +006.52.52.3  +52.44.13.7          0.0059       -0.1534  6364566.4992  3825843.018000   461704.416000  5065381.461000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  18   CS103LBALOFAR     86.0 m   +006.53.48.8  +52.43.49.6          0.0141       -0.1591  6364569.1972  3826304.279000   462823.089000  5064934.334000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  19   CS201LBALOFAR     86.0 m   +006.52.57.9  +52.43.37.7          0.0067       -0.1620  6364570.9524  3826708.929000   461913.747000  5064713.838000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  20   CS301LBALOFAR     86.0 m   +006.52.04.4  +52.43.13.9         -0.0010       -0.1677  6364574.2278  3827412.917000   460992.310000  5064269.932000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  21   CS302LBALOFAR     86.0 m   +006.50.57.3  +52.42.58.4         -0.0107       -0.1714  6364585.2731  3827945.916000   459792.639000  5063990.016000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  22   CS401LBALOFAR     86.0 m   +006.51.21.2  +52.43.44.3         -0.0072       -0.1604  6364571.5705  3826766.106000   460100.388000  5064836.470000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  23   CS501LBALOFAR     86.0 m   +006.51.57.3  +52.44.27.6         -0.0020       -0.1500  6364565.3266  3825625.779000   460642.110000  5065640.772000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  24   RS106LBALOFAR     86.0 m   +006.59.06.3  +52.41.19.3          0.0599       -0.1951  6364586.5589  3829261.425000   469162.285000  5062137.310000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  25   RS205LBALOFAR     86.0 m   +006.53.48.3  +52.40.19.6          0.0140       -0.2094  6364593.0149  3831438.563000   463435.440000  5061025.466000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  26   RS208LBALOFAR     86.0 m   +006.55.08.3  +52.29.01.0          0.0255       -0.3718  6364663.9960  3847810.051000   466929.706000  5048357.222000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  27   RS305LBALOFAR     86.0 m   +006.46.26.2  +52.42.51.2         -0.0498       -0.1731  6364580.7756  3828720.768000   454781.428000  5063851.101000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  28   RS306LBALOFAR     86.0 m   +006.44.35.8  +52.42.17.3         -0.0658       -0.1812  6364585.1901  3829791.808000   452829.848000  5063221.590000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  29   RS307LBALOFAR     86.0 m   +006.40.51.4  +52.37.03.8         -0.0981       -0.2562  6364618.8181  3837940.949000   449560.756000  5057381.288000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  30   RS310LBALOFAR     86.0 m   +006.08.19.1  +52.34.43.9         -0.3799       -0.2897  6364615.9391  3845433.052000   413580.888000  5054756.170000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  31   RS406LBALOFAR     86.0 m   +006.45.01.6  +52.49.58.1         -0.0620       -0.0709  6364542.9989  3818467.634000   451974.601000  5071790.597000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  32   RS407LBALOFAR     86.0 m   +006.47.03.4  +52.54.27.4         -0.0445       -0.0065  6364498.7778  3811595.861000   453444.681000  5076770.429000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  33   RS409LBALOFAR     86.0 m   +006.21.28.9  +52.47.43.8         -0.2659       -0.1031  6364546.8907  3824755.853000   426178.847000  5069289.868000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  34   RS503LBALOFAR     86.0 m   +006.51.03.1  +52.45.35.3         -0.0099       -0.1338  6364556.5596  3824090.452000   459438.282000  5066898.190000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  35   RS508LBALOFAR     86.0 m   +006.57.11.4  +53.03.19.2          0.0433        0.1208  6364441.5605  3797202.116000   463087.509000  5086605.037000
+2014-10-07 20:34:29	INFO	listobs::ms::summary+	  36   RS509LBALOFAR     86.0 m   +006.47.07.0  +53.13.28.2         -0.0439        0.2666  6364383.9386  3783579.131000   450178.882000  5097830.835000
+2014-10-07 20:34:29	INFO	listobs::::casa	##### End Task: listobs              #####
+2014-10-07 20:34:29	INFO	listobs::::casa+	##########################################

@@ -1,0 +1,6 @@
+2014-10-07 20:09:50	INFO	casa::::casa	---
+2014-10-07 20:09:50	INFO	casa::::casa	CASA Version 4.2.0 (stable r27479)
+2014-10-07 20:09:50	INFO	casa::::casa	  Tagged on: Mon, 09 Sep 2013
+2014-10-07 20:12:27	INFO	concat::utils::verify	Verifying arguments....File existence checking failed for vis ["*.MS"]
+2014-10-07 20:12:27	WARN	concat::utils::verify	Argument vis failed to verify.
+2014-10-07 20:12:27	SEVERE	concat::::casa	An error occurred running task concat.

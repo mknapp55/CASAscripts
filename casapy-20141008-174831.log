@@ -1,0 +1,20 @@
+2014-10-08 17:49:39	INFO	casa::::casa	---
+2014-10-08 17:49:39	INFO	casa::::casa	CASA Version 4.2.0 (stable r27479)
+2014-10-08 17:49:39	INFO	casa::::casa	  Tagged on: Mon, 09 Sep 2013
+2014-10-08 17:50:25	INFO	simple_cluster::check_host_resources::casa	Host govcloud-128-149-57-249, Number of cores 8, Memory available 60745MB, CPU capacity available 100.0%
+2014-10-08 17:50:25	INFO	simple_cluster::config_cluster::casa	Will deploy up to 8 engines at node govcloud-128-149-57-249
+2014-10-08 17:50:25	INFO	simple_cluster::config_cluster::casa	Will use up to 54671MB of memory at node govcloud-128-149-57-249
+2014-10-08 17:50:25	INFO	simple_cluster::config_cluster::casa	Required memory per engine 4096.0MB allows to deploy up to 13 engines at node govcloud-128-149-57-249 
+2014-10-08 17:50:25	INFO	simple_cluster::config_cluster::casa	Cap number of engines deployed at node govcloud-128-149-57-249 from 13 to 8 in order to meet maximum number of engines constraint
+2014-10-08 17:50:25	WARN	simple_cluster::config_cluster::casa	Node config should be at least: 'hostname, numengine, workdir'
+2014-10-08 17:50:25	WARN	simple_cluster::config_cluster::casa	The following entry will be ignored: 
+2014-10-08 17:50:26	INFO	parallel_go::start_controller::casa	Controller 1413 started
+2014-10-08 17:50:42	INFO	parallel_go::start_engine::casa	start engine 1 on govcloud-128-149-57-249
+2014-10-08 17:50:42	INFO	parallel_go::start_engine::casa	start engine 2 on govcloud-128-149-57-249
+2014-10-08 17:50:42	INFO	parallel_go::start_engine::casa	start engine 3 on govcloud-128-149-57-249
+2014-10-08 17:50:43	INFO	parallel_go::start_engine::casa	start engine 4 on govcloud-128-149-57-249
+2014-10-08 17:50:43	INFO	parallel_go::start_engine::casa	start engine 5 on govcloud-128-149-57-249
+2014-10-08 17:50:43	INFO	parallel_go::start_engine::casa	start engine 6 on govcloud-128-149-57-249
+2014-10-08 17:50:44	INFO	parallel_go::start_engine::casa	start engine 7 on govcloud-128-149-57-249
+2014-10-08 17:50:44	INFO	parallel_go::start_engine::casa	start engine 8 on govcloud-128-149-57-249
+2014-10-08 17:50:46	INFO	parallel_go::init_nodes::casa	Initialize engines [0, 1, 2, 3, 4, 5, 6, 7]
