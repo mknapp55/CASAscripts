@@ -130,7 +130,11 @@ for idx, t in enumerate(dt):
       trange=tstartn.strftime('%Y/%m/%d/%H:%M:%S.%f')+'+'+t
       print 'Cleaning '+trange+'... ('+str(n)+'/'+str(ndt[idx])+')'
       for idxt, tlist in enumerate(testlist):
-        print 'Cleaning with test params '+str(idxt + 1)+'...'
+        if idxt < 10 or n == 0:
+		print 'Skipping (%d, %d)' % (idxt, n)
+		continue
+	ts_inin = time.time()
+	print 'Cleaning with test params '+str(idxt + 1)+'...'
         print tlist 
         if idxt % 2 == 0:
           tstring = '_tp'+str(int(idxt/2+1))
@@ -152,8 +156,8 @@ for idx, t in enumerate(dt):
 		print 'Clean finished for time range %s, RMS = %f.' % (trange, tmp['rms'][0])
 		print 'Results of imstat: '
 		print tmp2
-		tf_inner = time.time()
-		rt_t.append(tf_inner-ts_inner)
+		tf_inin = time.time()
+		rt_t.append(tf_inin-ts_inin)
 		print 'Run time: '+str(rt_t[-1])
 		lf = open(fname, 'a')
 		lf.write(name+'\n')
@@ -167,6 +171,12 @@ for idx, t in enumerate(dt):
 		lf.write('There was a problem with this iteration (testparams '+tstring+', idx='+str(idx)+', n='+str(n)+', idxt='+str(idxt)+')\n')
 		lf.close()
 		continue
+	tf_inner = time.time()
+	rt_inner = tf_inner-ts_inner
+	print 'Runtime for n='+str(n)+' : '+str(rt_inner)+' sec'
+	lf.open(fname, 'a')
+	lf.write('Runtime for n='+str(n)+' : '+str(rt_inner)+' sec\n')
+	lf.close()
     tf_outer = time.time()
     rtout.append(tf_outer-ts_outer)
     print 'Outer loop run time '+ str(idx)+': '+str((tf_outer-ts_outer)/60)+' minutes'

@@ -1,3 +1,2 @@
 # CASA cluster definition configuration file
-govcloud-128-149-57-249, 15, /home/mknapp, 0, 4096
-
+govcloud-128-149-57-249, 14, /home/mknapp, 0, 4096
