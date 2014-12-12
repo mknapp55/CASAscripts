@@ -90,7 +90,7 @@ for idx, im in enumerate(ims):
 			imsubimage(imagename = im, outfile=rname, region=rgnf, dropdeg=True, overwrite=True)
 			# Grab residual image in location of target:
 			rrname = fnroot+'_sub'+r+'.residual'
-			imsubimage(imagename = im, outfile=rrname, region=rgn, dropdeg=True, overwrite=True)
+			imsubimage(imagename = im, outfile=rrname, region=rgnf, dropdeg=True, overwrite=True)
 			# Try to fit Gaussian to target:
 			imfits[fnroot][r] = imfit(imagename=rname)
 			if imfits[fnroot][r] is not None and imfits[fnroot][r]['results']['nelements'] >0:
@@ -98,7 +98,7 @@ for idx, im in enumerate(ims):
 
 outfilename='imAnalysisRun_'+datetime.datetime.strftime(datetime.datetime.now(), '%m-%d-%Y-%H-%M-%S')+'.pickle'
 of = open(outfilename, 'w')
-pickle.dump((imvals, imfits, allrms, targresRMS, beamsize, pixsize, pixperbeam, compfits, ims)
+pickle.dump((imvals, imfits, allrms, targresRMS, beamsize, pixsize, pixperbeam, compfits, ims, field)
 , of)
 of.close()
 print 'All done. Image data saved to '+outfilename
