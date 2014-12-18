@@ -7,9 +7,10 @@ import os
 
 # MS file to use:
 vis = 'L85562_all_flagged.MS'
+fname = 'logfile_timesteps_new.txt'
 
 # Create logfile:
-lf = open('logfile_timesteps.txt', 'a')
+lf = open(fname, 'a')
 lf.write('# Log for timesteps processing of HD80606b LOFAR data\n')
 lf.write('Run started at '+datetime.datetime.today().strftime('%m/%d/%Y %H:%M:%S')+'\n')
 lf.write('# Timestamp, # Timerange, # Runtime, # RMS\n')
@@ -52,15 +53,25 @@ synthbeamasec = synthbeam*r2asec
 # Step through increasing size time chunks (no overlap):
 rmst = []
 pixsize = []
-npix = 1024
+npix = 2048
 its = 10000
 wp = 512
-fac=8
+fac=1
 spwrange = '15~105'
-cl = str(synthbeamasec[15]*2.5)+'arcsec'
+cl = str(synthbeamasec[60])+'arcsec'
 majcyc = 5
 th = '0.0Jy'
+gn = 0.1
+wt = 'briggs'
+rbst = 0.75
+stks = 'I'
+algm = 'clark'
+msk = ''
+pb = False
+
+rmst = []
 rt_t = []
+rtout = []
 
 # Time chunks:
 dt = ['0:05:37.5', '0:11:15', '0:15:00', '0:22:30', '0:30:00', '0:45:00', '1:00:00', '1:30:00','2:00:00', '3:00:00', '6:00:00']
@@ -69,6 +80,7 @@ tstart = '21:37:11.0'
 tstartday = '24-Jan-2013'
 tst = tstartday+'-'+tstart
 tstartdt = datetime.datetime.strptime(tst, '%d-%b-%Y-%H:%M:%S.%f')
+tbegin  = time.time()
 for idx, t in enumerate(dt):
     ts_outer = time.time()
     print 'Starting clean for set with dt = '+t+'...'
@@ -80,20 +92,38 @@ for idx, t in enumerate(dt):
       trange=tstartn.strftime('%Y/%m/%d/%H:%M:%S.%f')+'+'+t
       print 'Cleaning '+trange+'... ('+str(n)+'/'+str(ndt[idx])+')'
       name = 'timesteps_flg1_dt'+splitdelt[0]+'-'+splitdelt[1]+'-'+splitdelt[2]+'_n'+str(n)+'_it'+str(its)+'_wp'+str(wp)+'_facets'+str(fac)+'_npix'+str(npix)
-      pclean(vis, spw= spwrange, timerange=trange, field='0', mode='continuum', ftmachine='wproject', wprojplanes=wp, facets=fac, majorcycles=majcyc, imagename=name, niter=its, interactive=False, imsize=[npix, npix], cell=cl, uvrange='')
-      tmp = imstat(name+'.image')
-      tmp2 = [tmp['max'][0], tmp['min'][0], tmp['mean'][0], tmp['sigma'][0], tmp['rms'][0], tmp['median'][0], tmp['maxpos'][0],tmp['maxpos'][1], tmp['minpos'][0], tmp['minpos'][1]]
-      rmst.append(tmp['rms'][0])
-      print 'Clean finished for time range %s, RMS = %f.' % (trange, tmp['rms'][0])
-      print 'Results of imstat: '
-      print tmp2
-      tf_inner = time.time()
-      rt_t.append(tf_inner-ts_inner)
-      print 'Run time: '+str(rt_t[-1])
-      lf = open('logfile_timesteps.txt', 'a')
-      lf.write(datetime.datetime.today().strftime('%m/%d/%Y %H:%M:%S')+','+trange+','+str(rt_t[-1])+','+str(tmp['rms'][0])+'\n')
-      lf.close()
-      tmp = []
-      tmp2 = []
+      try:
+        pclean(vis, spw= spwrange, timerange=trange, field='0', mode='continuum', ftmachine='wproject', wprojplanes=wp, facets=fac, majorcycles=majcyc, imagename=name, niter=its, interactive=False, imsize=[npix, npix], cell=cl, uvrange='', alg=algm, pbcor=pbcor, weighting=wt, robust=rbst, stokes=stks, threshold=th, nterms=1, gain=gn, mask=msk, pbcor=pb)
+        tmp = imstat(name+'.image')
+        print name+'.image'
+        tmp2 = [tmp['max'][0], tmp['min'][0], tmp['mean'][0], tmp['sigma'][0], tmp['rms'][0], tmp['median'][0], tmp['maxpos'][0],tmp['maxpos'][1], tmp['minpos'][0], tmp['minpos'][1]]
+        rmst.append(tmp['rms'][0])
+        print 'Clean finished for time range %s, RMS = %f.' % (trange, tmp['rms'][0])
+        print 'Results of imstat: '
+        print tmp2
+        tf_inner = time.time()
+        rt_t.append(tf_inner-ts_inner)
+        print 'Run time: '+str(rt_t[-1])
+        lf = open(fname, 'a')
+        lf.write(name+'\n')
+        lf.write(datetime.datetime.today().strftime('%m/%d/%Y %H:%M:%S')+','+trange+','+str(rt_t[-1])+','+str(tmp['rms'][0])+'\n')
+        lf.close()
+        tmp = []
+        tmp2 = []
+      except:
+        print 'There was a problem running this block of code (idx='+str(idx)+', n='+str(n)+')'
+        lf=open(fname, 'a')
+        lf.write('There was a problem with this iteration (idx='+str(idx)+', n='+str(n)+')\n')
+        lf.close()
+        continue
     tf_outer = time.time()
-    print 'Runtime for all '+str(ndt[idx])+' '+t+' chunks: '+str(tf_outer-ts_outer)
+    print 'Runtime for outer loop iteration '+str(ndt[idx])+' '+t+' chunks: '+str(tf_outer-ts_outer)
+    lf = open(fname, 'a')
+    lf.write('Total runtime for dt = '+t': '+str((tf_outer-ts_outer)/60)+' minutes \n')
+    lf.close()
+tend = time.time()
+print 'Runtime for all '+str(ndt[idx])+' '+t+' chunks: '+str(tend-tbegin)
+lf = open(fname, 'a')
+lf.write('Run finished successfully at '+datetime.datetime.today().strftime('%m/%d/%Y %H:%M:%S')+'\n')
+lf.write('Total runtime: '+str((tend-tbegin)/60)+' minutes \n')
+lf.close()
